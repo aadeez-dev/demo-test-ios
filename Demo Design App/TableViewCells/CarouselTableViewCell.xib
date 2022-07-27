@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarouselTableViewCell" rowHeight="150" id="KGk-i7-Jjw" customClass="CarouselTableViewCell" customModule="Demo_Design_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEo-t1-Kzy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cXV-EA-bed">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iV1-s4-mHg">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fbW-WC-xjf">
+                                <rect key="frame" x="50" y="114" width="220" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="FUS-cU-KDS"/>
+                                </constraints>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cXV-EA-bed" firstAttribute="leading" secondItem="WEo-t1-Kzy" secondAttribute="leading" id="2Xm-hv-Hmb"/>
+                            <constraint firstAttribute="bottom" secondItem="fbW-WC-xjf" secondAttribute="bottom" constant="10" id="2g4-us-drI"/>
+                            <constraint firstAttribute="trailing" secondItem="cXV-EA-bed" secondAttribute="trailing" id="Kne-a4-Bxj"/>
+                            <constraint firstItem="cXV-EA-bed" firstAttribute="top" secondItem="WEo-t1-Kzy" secondAttribute="top" id="SjZ-6Z-Rre"/>
+                            <constraint firstAttribute="trailing" secondItem="fbW-WC-xjf" secondAttribute="trailing" constant="50" id="XMP-sO-193"/>
+                            <constraint firstItem="fbW-WC-xjf" firstAttribute="leading" secondItem="WEo-t1-Kzy" secondAttribute="leading" constant="50" id="jhN-uT-k9s"/>
+                            <constraint firstAttribute="bottom" secondItem="cXV-EA-bed" secondAttribute="bottom" id="z7a-wL-lv3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WEo-t1-Kzy" secondAttribute="trailing" id="Ecz-yZ-FFZ"/>
+                    <constraint firstItem="WEo-t1-Kzy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VbR-Yp-ilN"/>
+                    <constraint firstAttribute="bottom" secondItem="WEo-t1-Kzy" secondAttribute="bottom" id="k33-gU-gsW"/>
+                    <constraint firstItem="WEo-t1-Kzy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mxj-lR-FhH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="carouselCollectionView" destination="cXV-EA-bed" id="0YX-DV-zxR"/>
+                <outlet property="pageController" destination="fbW-WC-xjf" id="xHH-m4-iaL"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="119.19642857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

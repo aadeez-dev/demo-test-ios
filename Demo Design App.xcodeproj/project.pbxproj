@@ -16,6 +16,14 @@
 		8066BF8528919B340028271B /* Demo_Design_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BF8428919B340028271B /* Demo_Design_AppTests.swift */; };
 		8066BF8F28919B340028271B /* Demo_Design_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BF8E28919B340028271B /* Demo_Design_AppUITests.swift */; };
 		8066BF9128919B340028271B /* Demo_Design_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BF9028919B340028271B /* Demo_Design_AppUITestsLaunchTests.swift */; };
+		8066BFA028919C9E0028271B /* CarouselTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BF9E28919C9E0028271B /* CarouselTableViewCell.swift */; };
+		8066BFA128919C9E0028271B /* CarouselTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8066BF9F28919C9E0028271B /* CarouselTableViewCell.xib */; };
+		8066BFA428919EA10028271B /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BFA228919EA10028271B /* ItemTableViewCell.swift */; };
+		8066BFA528919EA10028271B /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8066BFA328919EA10028271B /* ItemTableViewCell.xib */; };
+		8066BFA92891A0490028271B /* CarouselItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BFA72891A0490028271B /* CarouselItemCollectionViewCell.swift */; };
+		8066BFAA2891A0490028271B /* CarouselItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8066BFA82891A0490028271B /* CarouselItemCollectionViewCell.xib */; };
+		8066BFAD2891A9D00028271B /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 8066BFAC2891A9D00028271B /* countries.json */; };
+		8066BFB02891AA450028271B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066BFAF2891AA450028271B /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		8066BF8A28919B340028271B /* Demo Design AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo Design AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8066BF8E28919B340028271B /* Demo_Design_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_Design_AppUITests.swift; sourceTree = "<group>"; };
 		8066BF9028919B340028271B /* Demo_Design_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_Design_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8066BF9E28919C9E0028271B /* CarouselTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTableViewCell.swift; sourceTree = "<group>"; };
+		8066BF9F28919C9E0028271B /* CarouselTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselTableViewCell.xib; sourceTree = "<group>"; };
+		8066BFA228919EA10028271B /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		8066BFA328919EA10028271B /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		8066BFA72891A0490028271B /* CarouselItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		8066BFA82891A0490028271B /* CarouselItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		8066BFAC2891A9D00028271B /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		8066BFAF2891AA450028271B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,10 @@
 		8066BF6C28919B300028271B /* Demo Design App */ = {
 			isa = PBXGroup;
 			children = (
+				8066BFAE2891AA340028271B /* Model */,
+				8066BFAB2891A9460028271B /* Assets */,
+				8066BFA62891A01E0028271B /* CollectionViewCells */,
+				8066BF9D28919C260028271B /* TableViewCells */,
 				8066BF6D28919B300028271B /* AppDelegate.swift */,
 				8066BF6F28919B300028271B /* SceneDelegate.swift */,
 				8066BF7128919B300028271B /* ViewController.swift */,
@@ -125,6 +145,42 @@
 				8066BF9028919B340028271B /* Demo_Design_AppUITestsLaunchTests.swift */,
 			);
 			path = "Demo Design AppUITests";
+			sourceTree = "<group>";
+		};
+		8066BF9D28919C260028271B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8066BF9E28919C9E0028271B /* CarouselTableViewCell.swift */,
+				8066BF9F28919C9E0028271B /* CarouselTableViewCell.xib */,
+				8066BFA228919EA10028271B /* ItemTableViewCell.swift */,
+				8066BFA328919EA10028271B /* ItemTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8066BFA62891A01E0028271B /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8066BFA72891A0490028271B /* CarouselItemCollectionViewCell.swift */,
+				8066BFA82891A0490028271B /* CarouselItemCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		8066BFAB2891A9460028271B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8066BFAC2891A9D00028271B /* countries.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8066BFAE2891AA340028271B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8066BFAF2891AA450028271B /* Country.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +290,10 @@
 				8066BF7A28919B340028271B /* LaunchScreen.storyboard in Resources */,
 				8066BF7728919B340028271B /* Assets.xcassets in Resources */,
 				8066BF7528919B300028271B /* Main.storyboard in Resources */,
+				8066BFAA2891A0490028271B /* CarouselItemCollectionViewCell.xib in Resources */,
+				8066BFA528919EA10028271B /* ItemTableViewCell.xib in Resources */,
+				8066BFAD2891A9D00028271B /* countries.json in Resources */,
+				8066BFA128919C9E0028271B /* CarouselTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +318,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8066BFB02891AA450028271B /* Country.swift in Sources */,
 				8066BF7228919B300028271B /* ViewController.swift in Sources */,
 				8066BF6E28919B300028271B /* AppDelegate.swift in Sources */,
+				8066BFA428919EA10028271B /* ItemTableViewCell.swift in Sources */,
+				8066BFA92891A0490028271B /* CarouselItemCollectionViewCell.swift in Sources */,
 				8066BF7028919B300028271B /* SceneDelegate.swift in Sources */,
+				8066BFA028919C9E0028271B /* CarouselTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
